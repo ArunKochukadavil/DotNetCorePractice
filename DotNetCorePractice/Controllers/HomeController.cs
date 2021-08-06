@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DotNetCorePractice.Models;
+using DataLayer;
 
 namespace DotNetCorePractice.Controllers
 {
@@ -20,6 +21,7 @@ namespace DotNetCorePractice.Controllers
 
         public IActionResult Index()
         {
+            var data = new TestDBRepo().GetTestData();
             return View();
         }
 

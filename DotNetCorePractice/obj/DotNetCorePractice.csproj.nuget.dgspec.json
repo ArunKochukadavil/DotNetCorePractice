@@ -40,6 +40,24 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0-preview.6.21352.12, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0-preview.6.21352.12, )"
+            },
+            "Microsoft.Extensions.Primitives": {
+              "target": "Package",
+              "version": "[6.0.0-preview.6.21352.12, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

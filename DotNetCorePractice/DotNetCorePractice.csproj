@@ -8,7 +8,22 @@
     <Folder Include="DB\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0-preview.6.21352.12" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0-preview.6.21352.12" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.0-preview.6.21352.12" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Common">
+      <HintPath>..\Common\bin\Debug\netstandard2.0\Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DataLayer">
+      <HintPath>..\DataLayer\bin\Debug\DataLayer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 
 
 </Project>
-D:\Practise\DotNetCore\DataLayer\TestDB.mdf
